@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:valueType="floatType"
+        android:valueFrom="0.0"
+        android:valueTo="1.0"
+        android:duration="0" />
+
+    <objectAnimator
+        android:propertyName="rotation"
+        android:valueType="floatType"
+        android:valueFrom="0.0"
+        android:valueTo="0.0"
+        android:duration="0" />
+
+    <objectAnimator
+        android:propertyName="y"
+        android:valueType="floatType"
+        android:valueFrom="0.0"
+        android:valueTo="0.0"
+        android:duration="0" />
+
+    <objectAnimator
+        android:propertyName="rotation"
+        android:valueType="floatType"
+        android:valueFrom="0.0"
+        android:valueTo="360.0"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="@integer/demo3_animation_full_time"/>
+
+    <objectAnimator
+        android:propertyName="y"
+        android:valueType="floatType"
+        android:valueFrom="0.0"
+        android:valueTo="500.0"
+        android:startOffset="@integer/demo3_animation_full_time"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="@integer/demo3_animation_full_time"/>
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:valueType="floatType"
+        android:valueFrom="1.0"
+        android:valueTo="0.0"
+        android:startOffset="@integer/demo3_animation_full_time"
+        android:duration="@integer/demo3_animation_full_time" />
+</set>
